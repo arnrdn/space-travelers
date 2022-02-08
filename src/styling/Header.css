@@ -41,6 +41,13 @@ nav {
 }
 
 .nav-items > a {
-  text-decoration: none;
   color: #047dff;
+}
+
+.inactive {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
 }
