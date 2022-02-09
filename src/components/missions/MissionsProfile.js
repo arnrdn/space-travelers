@@ -21,7 +21,8 @@ const MissionsProfile = () => {
         <li>
           My Missions
           <ul className="active-missions">
-            {displayActiveMissions}
+            {activeMissions.length === 0 ? (<p>No active missions yet!</p>)
+              : displayActiveMissions}
           </ul>
         </li>
       </ul>
