@@ -1,11 +1,23 @@
 import Axios from 'axios';
 
 const FETCH_MISSIONS = 'space-travelers/missions/FETCH_MISSIONS';
+const JOIN_MISSION = 'space-travelers/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'space-travelers/missions/LEAVE_MISSION';
 
 const initialState = [];
 
 export const fetchMissions = (payload) => ({
   type: FETCH_MISSIONS,
+  payload,
+});
+
+export const joinMission = (payload) => ({
+  type: JOIN_MISSION,
+  payload,
+});
+
+export const leaveMission = (payload) => ({
+  type: LEAVE_MISSION,
   payload,
 });
 
@@ -23,10 +35,30 @@ export const fetchMissionsApi = () => async (dispatch) => {
   dispatch(fetchMissions(missions));
 };
 
+export const joinMissionApi = (state, id) => {
+  const newState = state.map((mission) => {
+    if (mission.id !== id) return mission;
+    return { ...mission, reserved: true };
+  });
+  return newState;
+};
+
+export const leaveMissionApi = (state, id) => {
+  const newState = state.map((mission) => {
+    if (mission.id !== id) return mission;
+    return { ...mission, reserved: false };
+  });
+  return newState;
+};
+
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_MISSIONS:
       return action.payload;
+    case JOIN_MISSION:
+      return joinMissionApi(state, action.payload);
+    case LEAVE_MISSION:
+      return leaveMissionApi(state, action.payload);
     default:
       return state;
   }
