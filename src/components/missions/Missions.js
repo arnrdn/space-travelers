@@ -7,15 +7,17 @@ const Missions = () => {
   const missionsData = useSelector((state) => state.missionsReducer);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchMissionsApi());
-  }, []);
-
   const missions = missionsData.map((item) => (
     <li className="mission" key={item.id}>
       <Mission mission={item} />
     </li>
   ));
+
+  useEffect(() => {
+    if (missions.length === 0) {
+      dispatch(fetchMissionsApi());
+    }
+  }, []);
 
   return (
     <div className="missions-container">
