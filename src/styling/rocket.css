@@ -1,0 +1,13 @@
+.rocket-container {
+  display: flex;
+  padding-left: 50px;
+}
+
+.rocket-details {
+  padding-left: 30px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
