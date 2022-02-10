@@ -22,9 +22,9 @@ const Mission = (props) => {
       </div>
       <div className="mission-data">
         {!reserved
-        && <p className="mission-active">NOT A MEMBER</p>}
+        && <p className="mission-active non-m">NOT A MEMBER</p>}
         {reserved
-        && <p className="mission-active">Active Member</p>}
+        && <p className="mission-active m">Active Member</p>}
       </div>
       <div className="mission-data">
         {!reserved

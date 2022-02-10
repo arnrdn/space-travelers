@@ -5,10 +5,7 @@
 > It is an app you can use to reserve and cancel rockets, and join and leave missions by SpaceX. Also, you can track your reservations and missions in 'My Profile' section. This App was created using React&Redux and [SpaceX's API](https://api.spacexdata.com).
 
 <p align="center">
-  <img src="./src/img/soon.png" width="600px">
-</p>
-<p align="center">
-  <img src="./src/img/soon.gif" width="600px">
+  <img src="./src/images/demo.gif" width="600px">
 </p>
 
 
@@ -20,7 +17,7 @@
 
 ## Live Demo
 
-- [Click here to see a live version!](soon-to-be-here)
+- [Click here to see a live version!](https://space-travelers-rdnrn-dire.herokuapp.com/)
 
 ## Getting Started
 
