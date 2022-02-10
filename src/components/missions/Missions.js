@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissionsApi } from '../../redux/missions/missions';
 import Mission from './Mission';
+import '../../styling/Missions.css';
 
 const Missions = () => {
   const missionsData = useSelector((state) => state.missionsReducer);
@@ -31,9 +32,7 @@ const Missions = () => {
         <li className="mission-col">
           Status
         </li>
-        <li className="mission-col">
-          /
-        </li>
+        <li className="mission-col" />
       </ul>
       <ul className="missions">
         {missions}

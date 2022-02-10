@@ -8,13 +8,14 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 1rem 5%;
-  padding-bottom: 1rem;
+  padding-bottom: 1.6rem;
+  width: 90%;
   border-bottom: 1px solid #ccc;
 }
 
 .logo-corner {
-  width: 40%;
   display: flex;
+  align-items: center;
 }
 
 .logo-img {
@@ -24,12 +25,9 @@ header {
 
 .logo {
   font-size: 2rem;
+  font-weight: 500;
   line-height: 0.5rem;
-}
-
-nav {
-  padding-right: 5%;
-  width: 25%;
+  margin-left: 1rem;
 }
 
 .nav-menu {
@@ -40,8 +38,17 @@ nav {
   align-items: center;
 }
 
+.nav-items {
+  padding-left: 2rem;
+}
+
 .nav-items > a {
   color: #047dff;
+}
+
+.nav-items:nth-of-type(2) {
+  padding: 0 2rem;
+  border-right: 2px solid #212529;
 }
 
 .inactive {

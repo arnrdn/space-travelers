@@ -17,13 +17,10 @@ const MissionsProfile = () => {
 
   return (
     <div className="missions-profile-container">
-      <ul className="active-mission-list">
-        <li>
-          My Missions
-          <ul className="active-missions">
-            {displayActiveMissions}
-          </ul>
-        </li>
+      <h2>My Missions</h2>
+      <ul className="active-missions">
+        {activeMissions.length === 0 ? (<p>No active missions yet!</p>)
+          : displayActiveMissions}
       </ul>
     </div>
   );
