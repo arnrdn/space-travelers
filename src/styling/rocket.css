@@ -1,0 +1,60 @@
+.rockets-display-container {
+  margin: 4rem auto;
+}
+
+.rocket-container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  padding-left: 50px;
+  margin: 2.5rem auto 0 auto;
+  gap: 30px;
+  width: 90%;
+}
+
+.rocket-details {
+  height: 100%;
+}
+
+.rocket-reserved {
+  background-color: #18a2b8;
+  padding: 0.2rem 0.3rem;
+  margin-right: 0.3rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.rocket-details h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.rocket-details p {
+  margin-bottom: 20px;
+}
+
+.rocket-details button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.rocket-reserve-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.rocket-cancel-btn {
+  border: 1px solid #6d757d;
+  background-color: transparent;
+  color: #6d757d;
+}
+
+img {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}

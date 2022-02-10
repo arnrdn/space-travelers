@@ -1,0 +1,38 @@
+.profile-info {
+  margin: 4rem auto;
+  width: 80%;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.missions-profile-container h2,
+.reserve-container-top h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.active-missions,
+.reserve-container {
+  border: 1px solid #c1c2c3;
+  border-radius: 5px;
+}
+
+.active-missions p,
+.reserve-container p {
+  padding: 1rem;
+}
+
+.active-missions li,
+.reserve-container li {
+  border-bottom: 1px solid #c1c2c3;
+  font-size: 1rem;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.active-missions li:last-of-type,
+.reserve-container li:last-of-type {
+  border-bottom: none;
+}

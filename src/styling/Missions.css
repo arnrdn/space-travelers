@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.missions-container {
+  margin: 4rem auto;
+}
+
+.missions-cols,
+.mission {
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+}
+
+.mission:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.mission-data {
+  box-sizing: border-box;
+  padding: 0.8rem 0.4rem 1.75rem 0.4rem;
+  border: 1px solid #dee2e6;
+}
+
+.mission .mission-data:first-of-type {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.mission .mission-data:nth-of-type(3),
+.mission .mission-data:nth-of-type(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-m {
+  box-sizing: border-box;
+}
+
+.mission-col {
+  box-sizing: border-box;
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 0.35rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.mission-active {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.non-m {
+  background-color: #6d757d;
+}
+
+.m {
+  background-color: #18a2b8;
+}
+
+.mission-data button {
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.mission-join {
+  border: 1px solid #343a40;
+  color: #343a40;
+}
+
+.mission-leave {
+  border: 1px solid #de3e4d;
+  color: #de3e4d;
+}
